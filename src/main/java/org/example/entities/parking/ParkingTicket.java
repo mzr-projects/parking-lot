@@ -27,4 +27,8 @@ public class ParkingTicket extends Payment {
 
     private Exit exitIns;
 
+    @Override
+    protected boolean initiateTransaction() {
+        return false;
+    }
 }
